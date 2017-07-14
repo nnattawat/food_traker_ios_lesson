@@ -48,6 +48,7 @@
                                     <outlet property="nameLabel" destination="b8k-9k-1fp" id="Ctr-ff-zUf"/>
                                     <outlet property="photoImageView" destination="o4u-e7-UQG" id="QhY-Hh-Gzk"/>
                                     <outlet property="ratingControl" destination="x5y-Qg-ZI9" id="suX-Bd-zwr"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" identifier="ShowDetail" action="showViewController:sender:" id="8D4-zh-gsc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -59,7 +60,7 @@
                     <navigationItem key="navigationItem" title="Your meals" id="bGM-ZF-qRP">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="VJ9-or-8Fc">
                             <connections>
-                                <segue destination="iXq-M2-hsh" kind="presentation" id="Vrt-eC-Nc8"/>
+                                <segue destination="iXq-M2-hsh" kind="presentation" identifier="NewItem" id="Vrt-eC-Nc8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -81,7 +82,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2cd-wZ-Gpp">
-                                <rect key="frame" x="16" y="84" width="343" height="410"/>
+                                <rect key="frame" x="16" y="40" width="343" height="410"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cqs-Vk-0lJ">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -150,7 +151,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2018.4000000000001" y="137.18140929535232"/>
+            <point key="canvasLocation" x="2018" y="131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F1O-br-V3K">
@@ -186,10 +187,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecT-c5-HHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079.2" y="137.18140929535232"/>
+            <point key="canvasLocation" x="1172" y="476"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Nq3-NL-jLp"/>
+    </inferredMetricsTieBreakers>
 </document>
